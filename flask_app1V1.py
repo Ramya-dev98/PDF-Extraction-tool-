@@ -10,7 +10,7 @@ from rapidfuzz import fuzz
 app = Flask(__name__, template_folder='templates')
 
 # Initialize PaddleOCR (only once)
-ocr_model = PaddleOCR(use_angle_cls=True, lang='en', det_db_box_thresh=0.3)
+ocr_model = PaddleOCR(use_angle_cls=True, lang='en', det_db_box_thresh=0.2)
 
 # Converts PDF to image
 def convert_pdf_to_image(pdf_path):
